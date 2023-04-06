@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "node start.js"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.22",
+    "typescript": "^5.0.3"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
