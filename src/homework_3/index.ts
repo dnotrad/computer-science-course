@@ -1,16 +1,13 @@
 import { DoubleLinkedList } from '../lib/data-structures';
 
-const list = new DoubleLinkedList();
+const linkedList = new DoubleLinkedList<number>();
 
-list.add(1);
-list.add(2);
-list.add(3);
+linkedList.addLeft(1);
+linkedList.addLeft(2);
+linkedList.removeRight();
+linkedList.addLeft(3);
+linkedList.addLeft(4);
 
-console.log(list?.first?.value); // 1
-console.log(list?.last?.value); // 3
-console.log(list?.first?.next?.value); // 2
-console.log(list?.first?.next?.prev?.value); // 1
-
-for (const value of list) {
+for (const value of linkedList) {
   console.log(value);
 }
