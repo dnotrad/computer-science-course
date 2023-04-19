@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "dev": "node start.js",
     "test": "jest",
     "start": "nodemon --exec ts-node src/homework_$l/index.ts"
   },
